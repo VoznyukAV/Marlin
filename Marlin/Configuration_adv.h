@@ -788,12 +788,9 @@
  */
 #define CASE_LIGHT_ENABLE
 #if ENABLED(CASE_LIGHT_ENABLE)
-  #define CASE_LIGHT_PIN PB4                  // Аппаратный пин клеммы HE1 на SKR 3 EZ
-  #define CASE_LIGHT_DEFAULT_ON true          // Включать свет сразу при старте принтера (true/false)
-  #define CASE_LIGHT_DEFAULT_BRIGHTNESS 255   // Яркость по умолчанию (0-255)
-  #define CASE_LIGHT_MAX_PWM 255
-  //#define CASE_LIGHT_MENU                   // Меню управления яркостью
-  #define CASE_LIGHT_USE_NEOPIXEL false
+  #define CASE_LIGHT_PIN PB4
+  #define CASE_LIGHT_DEFAULT_ON true
+  #define CASE_LIGHT_DEFAULT_BRIGHTNESS 255
 #endif
   #if ANY(RGB_LED, RGBW_LED)
     //#define CASE_LIGHT_USE_RGB_LED          // Use RGB / RGBW LED as case light
