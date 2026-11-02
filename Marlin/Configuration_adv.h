@@ -901,14 +901,6 @@
 #if HAS_Y2_STEPPER
   #define INVERT_Y2_VS_Y_DIR
   //#define Y_DUAL_ENDSTOPS
-
-  // Принудительное назначение пинов 5-го слота (E1M) для мотора Y2:
-  #define Y2_STEP_PIN        PD11
-  #define Y2_DIR_PIN         PD10
-  #define Y2_ENABLE_PIN      PD13
-  #define Y2_SERIAL_TX_PIN   PD12
-  #define Y2_SERIAL_RX_PIN   PD12
-#endif
 #endif
 
 //
@@ -3672,7 +3664,7 @@
     #define X_STALL_SENSITIVITY  8
     #define X2_STALL_SENSITIVITY X_STALL_SENSITIVITY
     #define Y_STALL_SENSITIVITY  8
-    #define Y2_STALL_SENSITIVITY Y_STALL_SENSITIVITY
+    //#define Y2_STALL_SENSITIVITY Y_STALL_SENSITIVITY
     //#define Z_STALL_SENSITIVITY  8
     //#define Z2_STALL_SENSITIVITY Z_STALL_SENSITIVITY
     //#define Z3_STALL_SENSITIVITY Z_STALL_SENSITIVITY
