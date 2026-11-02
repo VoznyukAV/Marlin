@@ -898,6 +898,7 @@
   #endif
 #endif
 
+#define Y_DUAL_STEPPER_DRIVERS
 #if HAS_Y2_STEPPER
   #define INVERT_Y2_VS_Y_DIR        // Y2 direction signal is the opposite of Y
   //#define Y_DUAL_ENDSTOPS           // Y2 has its own endstop
