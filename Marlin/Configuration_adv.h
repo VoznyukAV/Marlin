@@ -899,12 +899,16 @@
 #endif
 
 #if HAS_Y2_STEPPER
-  #define INVERT_Y2_VS_Y_DIR        // Y2 direction signal is the opposite of Y
-  //#define Y_DUAL_ENDSTOPS           // Y2 has its own endstop
-  #if ENABLED(Y_DUAL_ENDSTOPS)
-    //#define Y2_STOP_PIN Y_MAX_PIN   // Y2 endstop pin override
-    #define Y2_ENDSTOP_ADJUSTMENT  0  // Y2 offset relative to Y endstop
-  #endif
+  #define INVERT_Y2_VS_Y_DIR
+  //#define Y_DUAL_ENDSTOPS
+
+  // Принудительное назначение пинов 5-го слота (E1M) для мотора Y2:
+  #define Y2_STEP_PIN        PD11
+  #define Y2_DIR_PIN         PD10
+  #define Y2_ENABLE_PIN      PD13
+  #define Y2_SERIAL_TX_PIN   PD12
+  #define Y2_SERIAL_RX_PIN   PD12
+#endif
 #endif
 
 //
