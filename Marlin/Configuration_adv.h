@@ -900,9 +900,7 @@
 
 #if HAS_Y2_STEPPER
   #define INVERT_Y2_VS_Y_DIR
-  #define Y2_ENABLE_PIN      PD13
-  #define Y2_STEP_PIN        PD11
-  #define Y2_DIR_PIN         PD10
+  //#define Y_DUAL_ENDSTOPS
 #endif
 
 //
